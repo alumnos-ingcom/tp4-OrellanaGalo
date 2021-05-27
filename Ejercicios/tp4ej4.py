@@ -10,8 +10,7 @@
 from tp4ej3 import ingreso_real
 
 def compara(numero, otro_numero):
-    numero = ingreso_real("Ingrese el primer numero:")
-    otro_numero = ingreso_real("Ingrese el segundo numero:")
+
     if numero < otro_numero:
         print("-1")
     elif numero == otro_numero:
@@ -20,7 +19,9 @@ def compara(numero, otro_numero):
         print("1")
 
 def prueba():
-    compara(1,1)
+    numero = ingreso_real("Ingrese el primer numero:")
+    otro_numero = ingreso_real("Ingrese el segundo numero:")
+    compara(numero, otro_numero)
     pass
 
 if __name__ == "__main__":
