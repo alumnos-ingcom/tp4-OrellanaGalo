@@ -10,7 +10,7 @@
 from tp4ej3 import ingreso_real
 
 def signo(numero):
-    numero = ingreso_real("Ingrese un numero para saber su signo:")
+    
     if numero < 0:
         print("El numero es negativo")
     elif numero > 0:
@@ -19,7 +19,8 @@ def signo(numero):
         print("El numero es igual a 0")
 
 def prueba():
-    signo(1)
+    numero = ingreso_real("Ingrese un numero para saber su signo:")
+    signo(numero)
     pass
 
 if __name__ == "__main__":
