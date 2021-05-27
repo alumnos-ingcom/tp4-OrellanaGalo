@@ -12,8 +12,7 @@ def ingreso_entero_reintento(mensaje, cantidad_reintentos=5):
     """ Donde comienza // Cuando termina // Cuanto avanza """ 
     
     for i in range(0, cantidad_reintentos, 1):
-        ingreso_entero("Puede ingresar 5 valores enteros.")
-    pass 
+        ingreso_entero("Puede ingresar 5 valores enteros.") 
 
 def ingreso_entero_restringido(mensaje, valor_minimo=0, valor_maximo=10):
 
@@ -40,16 +39,13 @@ def ingreso_entero(mensaje):
     except ValueError as err:
         raise IngresoIncorrecto("No era un numero!") from err
     return entero
-    
-pass
 
-def ej1(mensaje):
+def prueba():
+    
     print(mensaje)
     ingreso_entero_reintento("Tenes 5 intentos para agregar un numero entero")
     ingreso_entero_restringido("Ingrese un numero entre 0 y 10")
-
-def prueba():
-    ej1("Bienvenido!")
+    
     pass
 
 if __name__ == "__main__":
