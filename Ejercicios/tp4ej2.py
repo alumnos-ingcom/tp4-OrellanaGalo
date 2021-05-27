@@ -14,6 +14,7 @@ def suma_lenta(numero, otro_numero):
     for i in range (0, otro_numero, 1):
         numero = numero + 1
         print(f"{numero}")
+    return numero
 
 def prueba():
     
@@ -22,8 +23,6 @@ def prueba():
     numero = ingreso_entero("Ingrese un numero:")
     otro_numero = ingreso_entero("Ingrese otro numero:")
     suma_lenta(numero, otro_numero)
-    
-    pass
 
 if __name__ == "__main__":
     prueba()
