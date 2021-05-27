@@ -20,28 +20,28 @@ def ingreso_real(mensaje):
 def convertir_a_fahrrenheit(centigrados):
     
     conversion = (centigrados * 9/5) + 32
-    print(f"Fahrrenheit = {conversion}")
-    pass
+
+    return conversion
     
 def convertir_a_centigrados(fahrrenheit):
 
     conversion = (fahrrenheit - 32) * 5/9
-    print(f"Celsius = {conversion}")
-    pass
+
+    return conversion
 
 def prueba():
     print("Bienvenido a mi convertidor de grados Celsius a Fahrrenheit y visceversa!")
     i = ingreso_real("Ingrese cual de las 2 conversiones desea utilizar:\n'1' - Celsius a Fahrrenheit\n'2' - Fahrrenheit a Celsius\n")
     if i == 1:
         centigrados = ingreso_real("Ingrese los grados Celsius que desee convertir:")
-        convertir_a_fahrrenheit(centigrados)
+        resultado = convertir_a_fahrrenheit(centigrados)
+        print ('Fahrrenheit: ', resultado)
     elif i == 2:
         fahrrenheit = ingreso_real("Ingrese los grados Fahrrenheit que desee convertir")
-        convertir_a_centigrados(fahrrenheit)
+        resultado = convertir_a_centigrados(fahrrenheit)
+        print ('Celsius: ', resultado)
     else :
         print("El valor ingresado no corresponde a las funciones de este programa. Por favor, intentelo nuevamente.")
-        
-    pass
 
 if __name__ == "__main__":
     prueba()
