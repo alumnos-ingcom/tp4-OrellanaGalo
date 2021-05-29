@@ -16,13 +16,14 @@ def compara(numero, otro_numero):
     elif numero == otro_numero:
         print("0")
     else :
-        print("1")
+        print('1')
+        
+    return numero
 
 def prueba():
     numero = ingreso_real("Ingrese el primer numero:")
     otro_numero = ingreso_real("Ingrese el segundo numero:")
     compara(numero, otro_numero)
-    pass
 
 if __name__ == "__main__":
     prueba()
