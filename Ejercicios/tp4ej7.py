@@ -11,11 +11,15 @@ from tp4ej1 import ingreso_entero
 
 def division_lenta(dividendo, divisor):
 
-    contador = 0
-    for i in range (0, divisor, 1):
-        dividendo = dividendo -  divisor
-        contador = contador + 1
-    return dividendo 
+    cociente = 0
+    while dividendo >= divisor :
+        for i in range (divisor==0):
+            dividendo = dividendo - divisor
+            cociente = cociente + 1
+            print(f"\n- {cociente} - {dividendo}")
+        return dividendo
+    else :
+        print('hola')
 
 def prueba():
     
