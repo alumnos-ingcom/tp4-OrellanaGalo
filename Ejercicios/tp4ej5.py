@@ -12,16 +12,18 @@ from tp4ej3 import ingreso_real
 def signo(numero):
     
     if numero < 0:
-        print("El numero es negativo")
+        return -1
     elif numero > 0:
-        print("El numero es positivo")
+        return 1
     else:
-        print("El numero es igual a 0")
+        return 0
 
 def prueba():
+    
     numero = ingreso_real("Ingrese un numero para saber su signo:")
-    signo(numero)
-    pass
+    print (f'\n 1 = Positivo\n-1 = Negativo\n 0 = Cero')
+    resultado = signo(numero)
+    print('\nSu numero corresponde a: ', resultado)
 
 if __name__ == "__main__":
     prueba()
