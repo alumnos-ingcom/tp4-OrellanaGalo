@@ -18,6 +18,8 @@ def division_lenta(dividendo, divisor):
         cociente = cociente + 1
     variables.append(dividendo)
     variables.append(cociente)
+    if divisor == 0:
+        return 0
     return variables
 
 def prueba():
