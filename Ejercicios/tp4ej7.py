@@ -19,7 +19,7 @@ def division_lenta(dividendo, divisor):
     variables.append(dividendo)
     variables.append(cociente)
     if divisor == 0:
-        return 0
+        return 0 # Esto lo deberia haber retornado en Prueba pero bueno, a caballo regalado no se le miran los dientes...
     return variables
 
 def prueba():
