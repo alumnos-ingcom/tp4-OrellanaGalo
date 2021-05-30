@@ -12,18 +12,18 @@ from tp4ej3 import ingreso_real
 def compara(numero, otro_numero):
 
     if numero < otro_numero:
-        print("-1")
+        return -1
     elif numero == otro_numero:
-        print("0")
+        return 0
     else :
-        print('1')
-        
-    return numero
+        return 1
 
 def prueba():
+    
     numero = ingreso_real("Ingrese el primer numero:")
     otro_numero = ingreso_real("Ingrese el segundo numero:")
-    compara(numero, otro_numero)
-
+    resultado = compara(numero, otro_numero)
+    print('\nRetorna:', resultado)
+    
 if __name__ == "__main__":
     prueba()

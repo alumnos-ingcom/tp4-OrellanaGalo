@@ -13,7 +13,7 @@ def division_lenta(dividendo, divisor):
 
     cociente = 0
     while dividendo >= divisor :
-        for i in range (divisor==0):
+        for i in range (divisor):
             dividendo = dividendo - divisor
             cociente = cociente + 1
             print(f"\n- {cociente} - {dividendo}")
