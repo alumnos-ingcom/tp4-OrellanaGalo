@@ -12,23 +12,23 @@ from tp4ej1 import ingreso_entero
 def division_lenta(dividendo, divisor):
 
     cociente = 0
+    variables=[]
     while dividendo >= divisor :
-        for i in range (divisor):
-            dividendo = dividendo - divisor
-            cociente = cociente + 1
-            print(f"\n- {cociente} - {dividendo}")
-        return dividendo
-    else :
-        print('hola')
+        dividendo = dividendo - divisor
+        cociente = cociente + 1
+    variables.append(dividendo)
+    variables.append(cociente)
+    return variables
 
 def prueba():
     
     dividendo = ingreso_entero("Ingrese el dividendo")
     divisor = ingreso_entero("Ingrese el divisor")
+    
     print(f"\nCUENTA: {dividendo}/{divisor}")
     resultado = division_lenta(dividendo, divisor)
-    print("\nResultado de la operacion:", resultado)
-    pass
+    print('\nEl cociente es: ', resultado[1])
+    print("\nResto de la operacion es:", resultado[0])
 
 if __name__ == "__main__":
     prueba()
