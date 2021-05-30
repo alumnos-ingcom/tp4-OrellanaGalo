@@ -30,13 +30,14 @@ def convertir_a_centigrados(fahrrenheit):
     return conversion
 
 def prueba():
+    
     print("Bienvenido a mi convertidor de grados Celsius a Fahrrenheit y visceversa!")
-    i = ingreso_real("Ingrese cual de las 2 conversiones desea utilizar:\n'1' - Celsius a Fahrrenheit\n'2' - Fahrrenheit a Celsius\n")
-    if i == 1:
+    ingreso = ingreso_real("Ingrese cual de las 2 conversiones desea utilizar:\n'1' - Celsius a Fahrrenheit\n'2' - Fahrrenheit a Celsius\n")
+    if ingreso == 1:
         centigrados = ingreso_real("Ingrese los grados Celsius que desee convertir:")
         resultado = convertir_a_fahrrenheit(centigrados)
         print ('Fahrrenheit: ', resultado)
-    elif i == 2:
+    elif ingreso == 2:
         fahrrenheit = ingreso_real("Ingrese los grados Fahrrenheit que desee convertir")
         resultado = convertir_a_centigrados(fahrrenheit)
         print ('Celsius: ', resultado)
