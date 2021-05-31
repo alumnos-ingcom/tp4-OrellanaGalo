@@ -13,7 +13,7 @@ def es_primo(numero):
     
     for contador in range(numero):
         if contador + 1 == numero:
-            return 1
+            return True
         elif contador + 1 == 1:
             pass
         elif numero <= 0 or numero == 1:
@@ -21,7 +21,7 @@ def es_primo(numero):
         else:
             resto_div = numero % (contador + 1)
             if resto_div == 0:
-                return 0
+                return False
 
 def prueba():
     
@@ -29,7 +29,7 @@ def prueba():
     
     numero = ingreso_entero('\nIngrese un numero para saber si es primo.')
     num_primo = es_primo(numero)
-    print('\n 1 = El numero ingresado es primo\n 0 = El numero ingresado no es primo\n None = El valor ingresado no es valido')
+    print('\n True = El numero ingresado es primo\n False = El numero ingresado no es primo\n None = El valor ingresado no es valido')
     print('\nEl valor ingresado corresponde a: ', num_primo)
 
 if __name__ == "__main__":
