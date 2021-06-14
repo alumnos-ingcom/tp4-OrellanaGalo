@@ -42,7 +42,6 @@ def ingreso_entero_restringido(mensaje, valor_minimo, valor_maximo):
             return entero
         else:
             raise SinParametro('El numero ingresado se encuentra fuera de los parametros establecidos.')
-            pass
     except TypeError as err:
         raise TypeError ('Ingrese solo numeros enteros.') from err
 
@@ -63,8 +62,9 @@ def prueba():
     
     print('Bienvenido a mi codigo!')
     ingreso_usuario = ingreso_entero_reintento("\nTenes 5 intentos para agregar un numero entero")
-    ingreso_usuario = ingreso_entero_restringido("Ingrese un numero entre 0 y 10", 0, 10)
+    ingreso_usuario2 = ingreso_entero_restringido("Ingrese un numero entre 0 y 10", 0, 10)
     print(f'El numero ingresado fue: {ingreso_usuario}')
+    print(f'El segundo numero ingresado fue: {ingreso_usuario2}')
 
 
 if __name__ == "__main__":
